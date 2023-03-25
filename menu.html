@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META tags help search engines identify your page -->
+
+        <meta charset="utf-8"> <!-- character encoding for the page -->
+
+        <meta name="author" content="Shanting">
+
+        <meta name="keywords" content="icecream, ice, water, waffle">
+
+        <meta name="description" content="Happy Day Dessert Factory Website">
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+        <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        
+        <script src="js/script.js" type="text/javascript"></script>
+        
+
+        <!-- The title will appear in the menu bar of the browser -->
+        <title>Happy Day Dessert Factory Website</title>
+    </head>
+    <body>
+        <div id="container">
+            <!-- nav bar -->
+            <div id="top-row">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="top-nav">
+                    <a class="tab" href="index.html">Home</a>
+                    <a class="tab" href="promotions.html">Promotions</a>
+                    <a id="active" class="tab" href="menu.html">Menu</a>
+                    <a class="tab" href="order.html">Order</a>
+                    <a class="tab" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <!-- all menu items -->
+            <div id="menu">
+                <img src="images/menuTitle.png" alt="menu" class="menu-title">
+                <!-- horizontal scroll for all flavors -->
+                <!-- icecreams [image+flavor]-->
+                <h2>Ice Cream and Sorbet</h2>
+                <h3>Real fruit • 15% butterfat ice cream base • 10% butterfat custard base.</h3>
+                <div id="ice-cream">
+                    <div class="menu-card" onclick="showIngred(0);">
+                        <img src="images/creamOne.png" alt="ice-cream1" class="card-img">
+                        <h4>Chocolate</h4>
+                        <div id="i-0" class="ingredients">
+                            <p>Contains: milk, eggs, <br>
+                                vanilla, brown sugar, <br>
+                                cocoa powder, chocolate <br>
+                                chunks
+                            </p>
+                            </div>
+                    </div>
+                    <div class="menu-card" onclick="showIngred(1);">
+                        <img src="images/creamTwo.jpg" alt="ice-cream2" class="card-img">
+                        <h4>Mango Sorbet</h4>
+                        <p id="i-1" class="ingredients">description</p>
+                    </div>
+                    <div class="menu-card" onclick="showIngred(2);">
+                        <img src="images/creamThree.jpg" alt="ice-cream3" class="card-img">
+                        <h4>Cherry Vanilla</h4>
+                        <p id="i-2" class="ingredients">description</p>
+                    </div>
+                    <div class="menu-card" onclick="showIngred(3);">
+                        <img src="images/creamFour.jpg" alt="ice-cream4" class="card-img">
+                        <h4>Peanut</h4>
+                        <p id="i-3" class="ingredients">description</p>
+                    </div>
+                    <div class="menu-card" onclick="showIngred(4);">
+                        <img src="images/creamFive.jpg" alt="ice-cream5" class="card-img">
+                        <h4>Caramel</h4>
+                        <p id="i-4" class="ingredients">description</p>
+                    </div>
+                </div>
+                <!-- cakes [image+flavor]-->
+                <h2>Cakes</h2>
+                <div id="cakes">
+                    <div class="menu-card" onclick="showIngred(5);">
+                        <img src="images/cakeOne.jpg" alt="cake1" class="card-img">
+                        <h4>Double Chocolate</h4>
+                        <p id="i-5" class="ingredients">description</p>
+                    </div>
+                    <div class="menu-card" onclick="showIngred(6);">
+                        <img src="images/cakeTwo.jpg" alt="cake2" class="card-img">
+                        <h4>Pistacchio Cake</h4>
+                        <p id="i-6" class="ingredients">description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+        <footer>
+            <div id="contact-footer">
+                <h2>Contact</h2>
+                <p>906A Western Ave. Pittsburgh, PA 15233</p>
+                <p><span class="contact">Tel: </span>412 872-0117</p>
+                <span>Email: <a href="mailto:info@happydaydessertfactory.com">info@happydaydessertfactory.com</a></span>
+                <h4> Open Daily: 12-8 PM </h4>
+                <div id="socials">
+                    <a target="_blank" href="https://www.instagram.com/happydaydessertfactory/?hl=en"><img src="images/insta.png" alt="instagram"></a>
+                    <a target="_blank" href="https://www.facebook.com/happydaydessertfactory/"><img src="images/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+            <div id="mailing-footer">
+                <h2>Join Us!</h2>
+                <p>Be the first to hear about exclusive promotions, special events, and other news</p>
+                <form action="http://www.example.com/review.php" method="get">
+                    <fieldset>
+                        <label class="inline">Name*: </label><input class="inline" type="text" name="name" size="22" maxlength="100" placeholder="Enter Name" required>
+                        <label class="inline"> Zip Code: </label><input class="inline" type="text" name="zip" size="12" maxlength="100" pattern="[0-9]{5}" placeholder="00000"><br>
+                        <label>Email*: <input type="email" name="email" size="50" maxlength="200" placeholder="Enter Email" required><small>Format: abc@defg.com</small></label><br>
+                        <label><input class="check" type="checkbox" name="yes" checked="checked"><span>Subscribe to our newsletter</span></label>
+                        <input class="submit" type="submit" value="Subscribe">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <p> &copy; Happy Day Dessert Factory </p><br>
+        </footer>
+        </div>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+    
+</html>
