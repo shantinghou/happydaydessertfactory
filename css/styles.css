@@ -281,10 +281,25 @@ br{
     padding: 0 5em;
     color: #183787;
 }
-#ice-cream{
-    overflow-x: scroll;
-    white-space:nowrap;
+
+#menu a{
+    padding:5px 10px;
+    width:fit-content;
+    display:block;
+    margin:auto;
+    font-size:1.2em;
+    color:#F63872;
 }
+
+#menu a:visited{
+    color:#717171;
+}
+
+#menu a:hover{
+    color:#E88FAA
+}
+
+
 .menu-title{
     width:15%;
     display:block;
@@ -292,7 +307,7 @@ br{
 }
 .menu-card{
     display:inline-block;
-    width:17%;
+    width:18%;
     padding:2em;
     text-align:center;
     vertical-align:top;
@@ -373,10 +388,24 @@ br{
     width:50%;
 }
 .description h3{
-    line-height:30px !important;
+    margin-bottom:0;
+    width:400px;
+}
+#code:hover{
+    color:#e1d5c9;
+    cursor:pointer;
 }
 .description h2{
     font-size:3em !important;
+}
+#descript{
+    /* margin-top:0; */
+    background-color:#e1d5c9;
+    color:#E88FAA;
+    width:200px;
+    text-align:center;
+    border-radius:5px;
+    position:absolute;
 }
 /* contact */
 #contact{
@@ -403,6 +432,7 @@ br{
     padding:10px;
     border:solid 2px #183787;
 }
+
 
 /* mailing form */
 #mailing{

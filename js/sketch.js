@@ -1,32 +1,19 @@
 
 var canvas
-var react = true;
 
 function setup() {
     canvas = createCanvas(windowWidth, 860);
     canvas.position(0, 700);
-    canvas.style('z-index', '100');
+    canvas.style('z-index', '-100');
     // canvas.translate(0, -800);
     
-}
-
-function mousePressed(){
-    react = !react;
 }
 
 function draw(){
     clear();
     fill(246, 56, 114);
 
-    var d;
-    if (react){
-        d = mouseX-width/2;
-        canvas.style('z-index', '100');
-    }
-    else{
-        d = 4*width/5 - width/2;
-        canvas.style('z-index', '-100');
-    }
+    var d = mouseX-width/2;
     
     noStroke();
     beginShape();
@@ -41,4 +28,10 @@ function draw(){
     vertex(width, height);
     vertex(width/2, height);
     endShape(); 
+    fill(200, 200, 200);
+    textSize(20);
+    textFont('Syne');
+    if (d>50){
+        text("<— discount code", 2*width/3+d, 2*height/3+100);
+    }
 }

@@ -12,9 +12,14 @@
         <meta name="description" content="Happy Day Dessert Factory Website">
 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- p5js -->
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
         <script src="js/p5.js"></script>
         <script src="js/p5.min.js"></script>
+        <!-- jquery -->
+        <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+        <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
         <!-- <script src="js/script.js" type="text/javascript"></script> -->
         <!-- The title will appear in the menu bar of the browser -->
         <title>Happy Day Dessert Factory Website</title>
@@ -32,7 +37,7 @@
                         <a class="tab" href="index.html">Home</a>
                         <a id="active" class="tab" href="promotions.html">Promotions</a>
                         <a class="tab" href="menu.html">Menu</a>
-                        <a class="tab" href="order.html">Order</a>
+                        <a class="tab" href="order.html">Order &amp Cater</a>
                         <a class="tab" href="contact.html">Contact</a>
                     </div>
                 </div>
@@ -61,11 +66,15 @@
                     <div class="description">
                         <h2>Pistacchio Chocolate + Vanilla CheeseCake</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                        <h3>Use Discount Code: FEB14LOVE</h3>
+                        <h3>Use Discount Code: </h3>
+                        <h3 id="code" onclick="copyit();" onmouseover="showDescription('click to copy to clipboard');" 
+                        onmouseout="hideDescription();">FEB14LOVE</h3>
+                        <p id="descript"></p>
                     </div>
                 </div>
                 <div class="clear"></div>
                 <script src="js/sketch.js"></script>
+                <script src="js/script.js" type="text/javascript"></script>
             </div>
             <!-- footer -->
         <footer>
@@ -81,7 +90,7 @@
                 </div>
             </div>
             <div id="mailing-footer">
-                <h2>Join Us!</h2>
+                <h2>Subscribe to Our Mailing List</h2>
                 <p>Be the first to hear about exclusive promotions, special events, and other news</p>
                 <form action="http://www.example.com/review.php" method="get">
                     <fieldset>

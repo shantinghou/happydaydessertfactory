@@ -31,14 +31,22 @@ if ($("header").length ){
       dots[slideIndex-1].className += " active";
     }
   }
-  console.log($("p").html());
-  console.log($("#i-1").html());
-
-
 function showIngred(i){
     let num = i.toString();
     console.log("#i-"+num);
     $("#i-"+num).slideToggle("slow");
+}
+function copyit(){
+  navigator.clipboard.writeText("FEB14LOVE");
+  alert("Copied code: FEB14LOVE");
+}
+
+function showDescription(descript){
+  $("#descript").html(descript);
+}
+
+function hideDescription(){
+  $("#descript").html("");
 }
 
 
