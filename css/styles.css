@@ -119,9 +119,11 @@ header{
     float:left;
     text-align:left;
 }
-.stat h1{
+.stat h3{
+    margin-top:0.5em;
     font-size:7em;
     line-height:20px;
+    margin-bottom:0.5em;
 }
 .more-info{
     width:70%;
